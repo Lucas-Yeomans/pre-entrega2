@@ -270,63 +270,63 @@
 
 /* Container */
 
-.service-container {
-    background-color: #fff;
-    display: flex;
-}
-
-.service {
+.container-servicios {
     text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    width: 100vw;
 }
 
 /* Titulo */
 
-.service h2 {
-    font-size: 3vw;
-    text-shadow: 3px 3px 10px #000;
-    padding: 1vw;
-    margin-top: 20px;
+.service__title {
+    display: inline-block;
+    color: #fff;
+    background-color: #000;
+    border-radius: 100px;
+    text-shadow: 1px 1px 10px #ffffff;
+    padding: 1rem 4rem;
+    margin: 4rem;
 }
 
-/* Seguridad */
 
-.service__seg  {
-    display: flex;
-    justify-content: space-around;
-    margin: 60px;
-    flex-wrap: wrap;
-    font-size: 1.25vw; 
+.service__title h2 {
+    font-size: 4.5rem;
 }
 
-.service__seg--img {
-    width: 30vw;
-    height: 45vh;
-    border-radius: 20px;
+/* IMAGENES SERVICIOS */
+
+.imagenes-serv {
+    width: 100%;
+    align-items: first baseline;
+    
 }
+
+.img-siaparece {
+    width: 80%;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    
+}
+
+.img-noaparece {
+    display: none;
+}
+
+/* TEXTO DE SERVICIOS */
+
+.text__seg {
+    align-self: center;
+    margin-bottom: 8rem;
+}
+
 .service__seg--list-one {
-    order: -1;
+    font-size: 3.2rem;
     text-align: justify;
-    width: 40vw;
-    min-width: 40vw;
+    margin: 0 3rem 0 2rem;
 }
 
-.service__ases  {
-    display: flex;
-    justify-content: space-around;
-    margin: 60px;
-    flex-wrap: wrap;
-    font-size: 1.25vw;
-}
 
-.service__seg--list-two {
-    order: 1;
-    text-align: justify;
-    width: 40vw;
-}
+
+
 
 
 
@@ -465,20 +465,29 @@
 /* Container */
 
 .offices-container {
-    background-color: #fff;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 /* Oficinas */
 
 .offices__peru {
-    display: inline-block;
-    margin-top: 30px;
-    margin-right: 40px;
-    margin-bottom: 90px;
-    margin-left: 40px;;
+    width: 80%;
+    margin: 3rem 0;
+}
+
+.offices__peru iframe {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.offices__peru h2 {
+    font-size: 3.5rem;
+}
+
+.offices__peru p {
+    font-size: 2rem;
 }
 
 
@@ -575,7 +584,7 @@
 
 
 
-
+/* MEDIA QUERY DE SMARTPHONE */
 
 @media only screen and (min-width: 576px) {
     .container-fluid img {
@@ -616,10 +625,26 @@
         margin-right: 18rem;
     }
 
+    .offices__peru {
+        width: 50rem;
+    }
+
+
+
+
 }
 
 
+
+
+/* MEDIA QUERY TABLET */
+
 @media only screen and (min-width: 768px) {
+
+    /* PAGINA DE INICIO */
+
+    /* container */
+
     .container-fluid img {
         width: 14rem;
         min-width: 14rem; 
@@ -638,6 +663,8 @@
         box-shadow: 1px 1px 100px red;
     }
 
+    /* TITULO */
+
     .title {
         display: none;
     }
@@ -647,12 +674,12 @@
     }
 
 
+    /* CARRUSEL */
+
     #carouselExampleAutoplaying1 {
         width: 55rem;
         height: 27rem;
-        
     }
-    
     
     #carouselExampleAutoplaying2 {
         width: 55rem;
@@ -661,6 +688,8 @@
     }
 
 
+    /* FOOTER */
+
     .footer {
         align-items: center;
     }
@@ -668,10 +697,79 @@
     .footer__contact {
         width: 30%;
     }
+
+    /* PAGINA DE SERVICIOS  */
+
+    .container-servicios {
+        padding-bottom: 4rem;
+    }
+
+    h2 {
+        font-size: 4rem;
+    }
+
+    .service__seg {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .imagenes-serv {
+        width: 100%;
+        min-width: 35rem;
+        max-width: 35rem;
+    }
+
+    .imagenes-serv2 {
+        width: 100%;
+        min-width: 35rem;
+        max-width: 35rem;
+        order: 1;
+    }
+
+    .img-noaparece {
+        display: block;
+    }
+
+    .text__seg {
+        margin: 0
+        ;
+    }
+
+    /* TEXTO */
+    .service__seg--list-one {
+        font-size: 3.8rem;
+    }
+
+
+    /* OFICINAS */
+
+    .offices-container {
+        justify-content: space-evenly;
+    }
+
+    .offices__peru {
+        width: 40%;
+        
+    }
+
+
+
 }
 
 
+/* MEDIA QUERY DESKTOP */
+
 @media only screen and (min-width: 1200px) {
+    
+    /* PAGINA INICIO */
+
+    /* CARRUSEL TITULO */
+
+    .client__title h2 {
+        font-size: 4rem;
+    }
+
+    /* FOOTER */
     
     .footer {
         align-items: center;
@@ -683,7 +781,6 @@
 
     .footer__contact {
         width: 20%;
-        
     }
 
     .footer__copy {
@@ -692,9 +789,61 @@
         justify-content: center;
     }
 
-    .client__title h2 {
-        font-size: 4rem;
+    /* PAGINA DE SERVICIOS */
+
+
+    
+
+    h2 {
+        font-size: 5rem;
     }
+
+    /* SECCION ARTICULOS */
+
+    .service__seg {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    /* 1 FOTO ARTICULO*/
+
+    .imagenes-serv {
+        width: 50%;
+        min-width: 40vw;
+    }
+    
+    .img-siaparece {
+        width: 100%;
+        max-width: 60rem;
+    }
+    
+    .img-noaparece {
+        display: none;
+    }
+
+    
+    .text__seg {
+        width: 50%;
+    }
+    
+    /* 2 FOTO ARTICULO*/
+
+    .imagenes-serv2 {
+        width: 100%;
+        min-width: 40vw;
+        order: 0;
+    }
+
+
+    /* OFICINAS */
+
+    .offices__peru {
+        width: 28%;
+        
+    }
+
+
+
 }
 
 
