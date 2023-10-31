@@ -1,0 +1,855 @@
+/* PAGINA WEB GRUPO ELTA SAC */
+
+/* Estilo por defecto */
+
+* {
+    font-family: 'Oswald', sans-serif;
+    font-size: 62.5%;
+}
+
+
+
+
+/* NAVEGADOR PRINCIPAL */
+
+/* HEADER */
+
+
+/* Container */
+
+.header-container {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+/* Logo */
+
+.container-fluid {
+    background-color: #000000;
+}
+
+.container-fluid img {
+    width: 8rem;
+    min-width: 8rem; 
+    margin-left: 2rem;
+}
+
+
+
+/* Browser */
+
+.navbar {
+    padding: 0;
+    
+}
+
+.navbar-toggler-icon {
+    font-size: 1.8rem;
+}
+
+.navbar-toggler-icon:hover {
+    box-shadow: 1px 1px 100px red;
+}
+
+.collapse {
+    flex-grow: 0;
+    margin-left: 2rem;
+    margin-right: 5rem;
+}
+
+.collapse a {
+    color: #ffffff;
+    font-size: 1.6rem;
+    
+}
+
+#navbarNavDropdown a:hover {
+    color: red;
+    text-shadow: 0px 0px 10px #fff; text-shadow: 0px 0px 10px #fff;
+} 
+
+.dropdown-menu a {
+    color: #000;
+    
+}
+
+
+
+
+
+
+
+
+/* FOOTER */
+
+
+/* Container */
+
+.footer-container {
+    display: flex;
+}
+
+.footer {
+    width: 100%;
+    height: 200px;
+    background-color: #000;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    color: #fff;
+}
+
+/* Titulo */
+
+.footer__title {
+    text-align: center;
+    font-size: 2.6rem;
+    text-shadow: 0px 0px 10px #fff, 0px 0px 10px #ff04045e;
+}
+
+/* Contacto */
+
+.footer__contact {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 8rem;
+    margin-right: 8rem;
+}
+
+.footer__copy {
+    font-size: 2.3rem;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+/* PAGINA INICIO */
+
+
+.texto-inicio {
+    background-color: #c5c5c586;
+}
+
+
+/* Titulo */
+
+.title {
+    font-size: 3.4rem;
+    text-align: center;
+    padding-top: 2rem;
+    margin-bottom: 2rem;
+
+    color: #000;
+    font-weight: 600;
+    text-shadow: 3px 3px 10px #ffffff;
+}
+
+
+/* Parrafo */
+
+.p {
+    font-size: 2rem;
+    text-align: justify;
+    margin: 0 3rem;
+    padding-bottom: 2rem;
+
+    color: #000000;
+    font-weight: lighter;
+    text-shadow: 3px 3px 10px #fff,3px 3px 10px #fff;
+}
+
+/* Titulo */
+
+.main__title {
+    color: #000;
+    font-weight: bold;
+    text-align: left;
+    font-size: 3vw;
+    width: 80vw;
+    text-shadow: 3px 3px 10px #ffffff;
+}
+
+/* Parrafo */
+
+.main__p {
+    text-align:justify;
+    color: #000000;
+    font-size: 1.5vw;
+    width: 80vw;
+    font-weight: bolder;
+    text-shadow: 3px 3px 10px #fff,3px 3px 10px #fff;
+}
+
+/* Container */
+
+
+.carousel-caption {
+    left: 3%;
+    
+}
+
+/* Client Container */
+
+#client-container {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+/* Titulo */
+
+.client__title {
+    display: inline-block;
+    color: #fff;
+    background-color: #000;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+    border-radius: 100px;
+    text-shadow: 0px 0px 15px #fff;
+    padding: 1rem 4rem;
+}
+
+.client__title h2 {
+    font-size: 3rem;
+}
+
+/* Imagen */
+
+.client {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-evenly;
+}
+
+
+#carouselExampleAutoplaying1 {
+    display: flex;
+    width: 35rem;
+    height: 20rem;
+    
+}
+
+.carousel-inner {
+    display: flex;
+}
+
+#carouselExampleAutoplaying2 {
+    display: flex;
+    width: 35rem;
+    height: 10rem;
+}
+
+.carousel-control-next-icon {
+    background-color: #000;
+    
+}
+
+.carousel-control-prev-icon {
+    background-color: #000;
+}
+
+
+
+
+
+
+
+
+/* PAGINA DE SERVICIOS */
+
+/* Container */
+
+.container-servicios {
+    text-align: center;
+}
+
+/* Titulo */
+
+.service__title {
+    display: inline-block;
+    color: #fff;
+    background-color: #000;
+    border-radius: 100px;
+    text-shadow: 1px 1px 10px #ffffff;
+    padding: 1rem 4rem;
+    margin: 4rem;
+}
+
+
+.service__title h2 {
+    font-size: 4.5rem;
+}
+
+/* IMAGENES SERVICIOS */
+
+.imagenes-serv {
+    width: 100%;
+    align-items: first baseline;
+    
+}
+
+.img-siaparece {
+    width: 80%;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    
+}
+
+.img-noaparece {
+    display: none;
+}
+
+/* TEXTO DE SERVICIOS */
+
+.text__seg {
+    align-self: center;
+    margin-bottom: 8rem;
+}
+
+.service__seg--list-one {
+    font-size: 3.2rem;
+    text-align: justify;
+    margin: 0 3rem 0 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* PAGINA DE SOBRE NOSOTROS */
+
+/* Container */
+
+.main-container-n {
+    width: 98vw;
+    display: flex;
+}
+
+/* Quienes somos */
+
+.nosotros {
+    width: 99vw;
+    background-color: #fff;
+}
+
+.nosotros__quienes {
+    margin: 1vw;
+}
+
+.nosotros__quienes--title {
+    font-size: 3vw;
+    text-align: center;
+    text-shadow: 3px 3px 10px #000;
+    padding: 1vw;
+}
+
+.nosotros__quienes--p {
+    font-size: 1.2vw;
+    text-align: justify;
+    margin: 4vw;
+    padding-right: 3vw;
+}
+
+.nosotros__quienes--p p {
+    padding-bottom: 10px;
+}
+
+.nosotros__quienes--img {
+    margin: 0 5vw ;
+    
+}
+
+.nosotros__quienes--img1 {
+    width: 35vw;
+    border-radius: 20px;
+    
+}
+
+.nosotros__quienes--img2 {
+    width: 35vw;
+    margin-left: 15vw;
+    border-radius: 20px;
+}
+
+/* Mision */
+
+.nosotros__mision {
+    background-color: #00000053;
+}
+
+.nosotros__mision--title {
+    font-size: 3vw;
+    text-align: center;
+    text-shadow: 3px 3px 10px #000;
+    padding: 2vw;
+    margin-top: 70px;
+}
+
+.nosotros__mision--p {
+    font-size: 1.2vw;
+    display: flex;
+    padding: 5vw;
+    justify-content: space-between;
+}
+
+.nosotros__mision--p p {
+    width: 50vw;
+}
+
+.nosotros__mision--p img {
+    width: 21vw;
+    position: relative;
+    right: 2vw;
+    border-radius: 20px;
+}
+
+/* Vision */
+
+.nosotros__vision--title {
+    font-size: 3vw;
+    text-align: center;
+    text-shadow: 3px 3px 10px #000;
+    padding: 2vw;
+}
+
+.nosotros__vision--p {
+    font-size: 1.2vw;
+    display: flex;
+    padding: 5vw;
+    justify-content: space-between;
+}
+
+.nosotros__vision--p p {
+    width: 50vw;
+}
+
+.nosotros__vision--p img {
+    width: 24vw;
+    position: relative;
+    right: 2vw;
+    border-radius: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+/* PAGINA DE OFICINAS */
+
+/* Container */
+
+.offices-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Oficinas */
+
+.offices__peru {
+    width: 80%;
+    margin: 3rem 0;
+}
+
+.offices__peru iframe {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.offices__peru h2 {
+    font-size: 3.5rem;
+}
+
+.offices__peru p {
+    font-size: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+/* PAGINA DE CONTACTO */
+
+/* Container */
+
+.contact {
+    
+    text-align: center;
+    background-color: #fff;
+    font-size: 1vw;
+}
+
+/* Titulo */
+
+.contact__title {
+    font-size: 2.1vw;
+    text-align: center;
+    text-shadow: 3px 3px 10px #000;
+    padding: 1vw;
+    margin-top: 20px;
+}
+
+/* Imputs */
+
+.contact__name--input {
+    width: 34vw;
+    padding: 0.4em;
+    border: 2px solid #00000059;
+    border-radius: 15px;
+    margin: 1.5em;
+}
+
+.contact__email--input {
+    width: 34vw;
+    padding: 0.4em;
+    border: 2px solid #00000059;
+    border-radius: 15px;
+    margin: 1.5em;
+}
+
+.contact__tel--input {
+    width: 34vw;
+    padding: 0.4em;
+    border: 2px solid #00000059;
+    border-radius: 15px;
+    margin: 1.5em;
+}
+
+.contact__region--select {
+    width: 34vw;
+    padding: 0.4em;
+    border: 2px solid #00000059;
+    border-radius: 15px;
+    margin: 1.5em;
+}
+
+.contact__text-area {
+    width: 34vw;
+    padding: 0.4em;
+    border: 2px solid #00000059;
+    border-radius: 15px;
+    margin: 1.5em;
+}
+
+.contact__submit--input {
+    width: 10vw;
+    padding: 0.4em;
+    border: 2px solid #00000059;
+    border-radius: 15px;
+    margin: 1.5em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERY DE SMARTPHONE */
+
+@media only screen and (min-width: 576px) {
+    .container-fluid img {
+        width: 11rem;
+        min-width: 11rem; 
+        margin-left: 2rem;
+    }
+
+    .collapse a {
+        font-size: 2.4rem;
+        
+    }
+
+    .navbar-toggler-icon {
+        font-size: 2.3rem;
+    }
+
+    .navbar-toggler-icon:hover {
+        box-shadow: 1px 1px 100px red;
+    }
+
+
+    #carouselExampleAutoplaying1 {
+        width: 45rem;
+        height: 25rem;
+        
+    }
+    
+    
+    #carouselExampleAutoplaying2 {
+        width: 45rem;
+        height: 22rem;
+        align-items: center;
+    }
+
+    .footer__contact {
+        margin-left: 18rem;
+        margin-right: 18rem;
+    }
+
+    .offices__peru {
+        width: 50rem;
+    }
+
+
+
+
+}
+
+
+
+
+/* MEDIA QUERY TABLET */
+
+@media only screen and (min-width: 768px) {
+
+    /* PAGINA DE INICIO */
+
+    /* container */
+
+    .container-fluid img {
+        width: 14rem;
+        min-width: 14rem; 
+        margin-left: 2rem;
+    }
+
+    .collapse a {
+        font-size: 2.8rem;
+    }
+
+    .navbar-toggler-icon {
+        font-size: 2.8rem;
+    }
+
+    .navbar-toggler-icon:hover {
+        box-shadow: 1px 1px 100px red;
+    }
+
+    /* TITULO */
+
+    .title {
+        display: none;
+    }
+    
+    .p {
+        display: none;
+    }
+
+
+    /* CARRUSEL */
+
+    #carouselExampleAutoplaying1 {
+        width: 55rem;
+        height: 27rem;
+    }
+    
+    #carouselExampleAutoplaying2 {
+        width: 55rem;
+        height: 25rem;
+        align-items: center;
+    }
+
+
+    /* FOOTER */
+
+    .footer {
+        align-items: center;
+    }
+
+    .footer__contact {
+        width: 30%;
+    }
+
+    /* PAGINA DE SERVICIOS  */
+
+    .container-servicios {
+        padding-bottom: 4rem;
+    }
+
+    h2 {
+        font-size: 4rem;
+    }
+
+    .service__seg {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .imagenes-serv {
+        width: 100%;
+        min-width: 35rem;
+        max-width: 35rem;
+    }
+
+    .imagenes-serv2 {
+        width: 100%;
+        min-width: 35rem;
+        max-width: 35rem;
+        order: 1;
+    }
+
+    .img-noaparece {
+        display: block;
+    }
+
+    .text__seg {
+        margin: 0
+        ;
+    }
+
+    /* TEXTO */
+    .service__seg--list-one {
+        font-size: 3.8rem;
+    }
+
+
+    /* OFICINAS */
+
+    .offices-container {
+        justify-content: space-evenly;
+    }
+
+    .offices__peru {
+        width: 40%;
+        
+    }
+
+
+
+}
+
+
+/* MEDIA QUERY DESKTOP */
+
+@media only screen and (min-width: 1200px) {
+    
+    /* PAGINA INICIO */
+
+    /* CARRUSEL TITULO */
+
+    .client__title h2 {
+        font-size: 4rem;
+    }
+
+    /* FOOTER */
+    
+    .footer {
+        align-items: center;
+    }
+
+    .footer__title {
+        font-size: 1.7vw;
+    }
+
+    .footer__contact {
+        width: 20%;
+    }
+
+    .footer__copy {
+        font-size: 1.3vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    /* PAGINA DE SERVICIOS */
+
+
+    
+
+    h2 {
+        font-size: 5rem;
+    }
+
+    /* SECCION ARTICULOS */
+
+    .service__seg {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    /* 1 FOTO ARTICULO*/
+
+    .imagenes-serv {
+        width: 50%;
+        min-width: 40vw;
+    }
+    
+    .img-siaparece {
+        width: 100%;
+        max-width: 60rem;
+    }
+    
+    .img-noaparece {
+        display: none;
+    }
+
+    
+    .text__seg {
+        width: 50%;
+    }
+    
+    /* 2 FOTO ARTICULO*/
+
+    .imagenes-serv2 {
+        width: 100%;
+        min-width: 40vw;
+        order: 0;
+    }
+
+
+    /* OFICINAS */
+
+    .offices__peru {
+        width: 28%;
+        
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
